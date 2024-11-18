@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ludoras space — веб-разработчик, которому вы можете доверять. Лучшие навыки фронтенда, бэкенда и веб-технологий.">
+    <meta name="keywords" content="веб-разработка, фронтенд, бэкенд, Ludoras, технологии, проекты, доверие">
+    <meta name="author" content="Ludoras">
+    <title>Ludoras space</title>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&family=Geist+Mono&display=swap" rel="stylesheet">
+    <style>
+        /* Сброс стилей и настройка box-sizing */
+        * {
+            box-sizing: border-box;
+        }
+
+        ::selection {
+            color: #000000;
+            background: #f8a333;
+        }
+
+        body {
+            background-color: #3d3d3d;
+            margin: 0;
+            padding: 0;
+            margin-top: 80px;
+            font-family: "Ubuntu", sans-serif;
+        }
+
+        .tg-grey {
+            text-align: center;
+            color: grey;
+            margin-top: 1.5%;
+            font-family: "Geist Mono", monospace;
+        }
+
+        .circle-ava {
+            width: 80px;
+            display: block;
+            margin: 1.5% auto;
+            border-radius: 20%;
+            border: dashed #f8a333;
+        }
+
+        .header {
+            text-align: center;
+            color: white;
+            margin-top: 1.5%;
+            font-family: "Geist Mono", monospace;
+            font-size: 150%;
+        }
+
+        .hey {
+            color: #f8a333;
+        }
+
+        .btn-buy button {
+            width: 200px;
+            height: 2em;
+            margin: 0.5em auto;
+            border: none;
+            border-radius: 0.625em;
+            font-size: 20px;
+            cursor: pointer;
+            font-family: "Geist Mono", monospace;
+            display: block;
+        }
+        .btn-buy a {
+            text-decoration: none;
+        }
+
+        .one {
+            background-color: #f8a333;
+            color: white;
+        }
+
+        .two {
+            background-color: #ffffff;
+            color: black;
+        }
+
+        .rec-tech-container {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .rec-tech {
+            width: 360px;
+            height: 180px;
+            background-color: rgb(33, 33, 33);
+            border: dashed #f8a333;
+            border-radius: 18px;
+        }
+
+        .bord {
+            width: 330px;
+            height: 28px;
+            background-color: rgb(33, 33, 33);
+            border: dashed #f8a333;
+            border-radius: 0 0 28px 28px;
+            margin: auto;
+            position: relative;
+            top: -2px;
+        }
+
+        .text-one-title {
+            font-family: "Geist Mono", monospace;
+            font-size: 20px;
+            text-align: center;
+            color: #ffffff;
+            margin-top: -2.2px;
+        }
+
+        .text-one-desc {
+            font-family: "Geist Mono", monospace;
+            font-size: 15px;
+            color: #ffffff;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .text-one-title2 {
+            font-family: "Geist Mono", monospace;
+            font-size: 40px;
+            text-align: center;
+            color: #ffffff;
+        }
+
+        .navtxt {
+            font-family: "Geist Mono", monospace;
+            font-weight: bold;
+            font-size: 30px;
+            color: #ffffff;
+        }
+
+        .nav-link {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        .nav-link:hover {
+            text-decoration: none;
+        }
+
+        .login {
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            text-align: center;
+            font-family: "Geist Mono", monospace;
+            font-size: 20px;
+            color: #f8a333;
+            background-color: #f8a333;
+            border: dashed black;
+            padding: 10px;
+        }
+
+        .footer-phrase {
+            font-family: "Geist Mono", monospace;
+            color: #f8a333;
+            text-align: center;
+            animation: flicker 1s infinite alternate;
+        }
+
+        @keyframes flicker {
+            0% { opacity: 0.5; }
+            100% { opacity: 1; }
+        }
+
+        @media (max-width: 768px) {
+            .rec-tech-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            .rec-tech {
+                width: 100%;
+                margin-bottom: 25px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+<div class="login">
+    <a href="index.html" class="nav-link">
+        <div class="navtxt">// POP TECH //</div>
+    </a>
+</div>
+
+<img class="circle-ava" src="daun.png" alt="Avatar">
+
+<div class="header">
+    <span class="hey">A developer 💻</span> you can definitely
+    <span class="hey">trust with your project</span><br/>
+    and expect superior results ⚙️
+</div>
+
+<div class="btn-buy">
+    <a href="https://vk.com/sosyogyrec" target="_blank">
+        <button class="one">[+ MAKE ORDER]</button>
+    </a>
+    <button class="two" onclick="location.href='#about'">[! ABOUT ME]</button>
+</div>
+
+<br><br><br>
+<div class="text-one-title2">// My skills //</div>
+<br>
+
+<div class="tables123">
+    <div class="rec-tech-container">
+        <div class="rec-tech">
+            <div class="bord">
+                <div class="text-one-title">Technical stack</div>
+            </div>
+            <div class="text-one-desc">
+                <br> ---- [Python] ----
+                <br> ---- [JavaScript] ----
+                <br> ---- [HTML, CSS] ----
+                <br> ---- [C++, C#] ----
+                <br> ---- [Rust] ----
+            </div>
+        </div>
+        <div class="rec-tech">
+            <div class="bord">
+                <div class="text-one-title">Frontend skills</div>
+            </div>
+            <div class="text-one-desc">
+                <br> ---- [React] ----
+                <br> ---- [Angular] ----
+                <br> ---- [Vue.js] ----
+                <br> ---- [Bootstrap] ----
+                <br> ---- [Material-UI] ----
+            </div>
+        </div>
+        <div class="rec-tech">
+            <div class="bord">
+                <div class="text-one-title">Backend skills</div>
+            </div>
+            <div class="text-one-desc">
+                <br> ---- [Node.js] ----
+                <br> ---- [Django] ----
+                <br> ---- [Flask] ----
+                <br> ---- [Ruby on Rails] ----
+                <br> ---- [ASP.NET] ----
+            </div>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<div class="text-one-title2" id="about">// About me //</div>
+<br>
+
+<div class="tables123">
+    <div class="rec-tech-container">
+        <div class="rec-tech">
+            <div class="bord">
+                <div class="text-one-title">My contacts</div>
+            </div>
+            <div class="text-one-desc">
+                <br> ---- https://vk.com/sosyogyrec ----
+                <br> ---- [Егорка Помидорка] ----
+                <br> ---- [Лаю на дверь] ----
+                <br> Единственный контакт
+                <br> Остальное фейки
+            </div>
+        </div>
+        <div class="rec-tech">
+            <div class="bord">
+                <div class="text-one-title">My job</div>
+            </div>
+            <div class="text-one-desc">
+                <br> ---- [Web development] ----
+                <br> ---- [Bootstrap] ----
+                <br> ---- [Material-UI] ----
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="tg-grey">I can write ALL!</div>
+<br>
+<div class="footer-phrase">// POPCHICK TECHNOLOGIES //</div>
+
+<script>
+    // Random fact
+    const facts = [
+        "Programmers never sleep — they just go into Hibernate mode 💤.",
+        "JavaScript is magic that sometimes works by accident.",
+        "The scariest mistake a programmer can make: forgetting the semicolon.",
+        "Coffee is the foundation of code. Without it, nothing works ☕."
+    ];
+    document.addEventListener("DOMContentLoaded", () => {
+        const fact = facts[Math.floor(Math.random() * facts.length)];
+        document.querySelector(".header").innerHTML += `<br><br><i>${fact}</i><br><br>`;
+    });
+</script>
+</body>
+</html>
